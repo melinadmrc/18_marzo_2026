@@ -1,143 +1,58 @@
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2070') no-repeat center center;
-
-    background-size: cover;
-    height: 90vh;
-    min-height: 500px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40")
+      center/cover;
+  height: 90vh;
 }
 
-/* HERO RESPONSIVE */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-}
-
-/* SECCIÓN SERVICIOS */
+/* SERVICIOS */
 .bg-light-custom {
-    background-color: #f8f9fa;
-    border-top: 1px solid #e9ecef;
+  background: #f8f9fa;
 }
 
-#servicios {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-/* IMÁGENES SERVICIOS */
 .img-servicio {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-@media (max-width: 768px) {
-    .img-servicio {
-        height: 250px;
-    }
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 /* CONTACTO */
 .contacto-section {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-    border-top: 1px solid #e9ecef;
+  background: #f1f3f5;
+  padding: 80px 0;
 }
 
 .contacto-box {
-    background-color: #ffffff;
-    padding: 40px 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.contacto-box .form-control {
-    border-radius: 10px;
-    padding: 12px 15px;
-}
-
-.contacto-box button {
-    border-radius: 10px;
-    font-weight: 600;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
 }
 
 /* FOOTER */
 .footer-rrhh {
-    background-color: #3b434f; /* Oxford grey */
-    padding: 60px 0 28px;
-    color: rgba(255, 255, 255, 0.82);
+  background: #3b434f;
+  color: white;
+  padding: 40px;
 }
 
-.footer-logo img {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-}
-
-.footer-text {
-    max-width: 330px;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.68);
-}
-
-.footer-title {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 18px;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.62);
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #ffffff;
-}
-
-.footer-divider {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    margin: 38px 0 24px;
-}
-
-.footer-copy {
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.55);
-}
-
-/* REDES SOCIALES */
+/* REDES */
 .footer-social {
     display: flex;
     justify-content: flex-end;
     gap: 14px;
 }
 
-/* ICONO BASE */
+/* base */
 .social-icon {
     width: 42px;
     height: 42px;
@@ -156,12 +71,12 @@
     transition: all 0.3s ease;
 }
 
-/* HOVER GENERAL */
+/* hover general */
 .social-icon:hover {
     transform: translateY(-3px);
 }
 
-/* COLORES MARCA */
+/* colores reales de marca */
 .social-icon.instagram:hover {
     background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
 }
@@ -174,37 +89,21 @@
     background-color: #ff0000;
 }
 
-/* EFECTO ICONO */
+/* efecto icono */
 .social-icon:hover svg {
     transform: scale(1.1);
 }
 
-/* RESPONSIVE FOOTER */
-@media (max-width: 991px) {
-    .footer-text {
-        max-width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
 
-    .footer-social {
-        justify-content: center;
-    }
+/* BOTÓN */
+.botoncito {
+  background: rgb(193, 187, 190);
+  border: none;
+  padding: 8px 12px;
 }
 
-@media (max-width: 768px) {
-    .footer-top,
-    .footer-bottom {
-        text-align: center;
-    }
-
-    .footer-logo {
-        display: flex;
-        justify-content: center;
-    }
-
-    .footer-social {
-        justify-content: center;
-        margin-top: 10px;
-    }
+.boton_oscuro {
+  background: #ae4785;
+  border: none;
+  padding: 8px 12px;
 }
